@@ -5,13 +5,6 @@ uint16_t W25QXX_TYPE;	//Ä¬ÈÏÊÇW25Q16
 
 
 extern SPI_HandleTypeDef hspi1;
-void light(void)
-	{
-	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
-		HAL_Delay(1000);
-	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
-		HAL_Delay(1000);
-}
 
 uint8_t W25QXX_Init(void)
 { 	
@@ -204,4 +197,18 @@ void W25QXX_Write_NoCheck(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteTo
 		}
 	}    
 } 
-
+void Delay_us(int us)
+{
+	uint16_t differ=0xffff-us-5;
+	__HAL_TIM_SetCounter(&htim2,differ);
+	HAL_TIM_Base_Start(&htim2);
+	
+	while(differ<0xffff-5)
+	{
+		
+		differ=__HAL_TIM_GET_COUNTER(&htim2);
+		
+	}
+	HAL_TIM_Base_Stop(&htim2);
+  
+}

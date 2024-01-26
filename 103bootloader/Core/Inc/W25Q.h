@@ -5,6 +5,7 @@
 extern "C" {
 #endif
 #include "main.h"
+#include "tim.h"
 //W25X系列/Q系列芯片列表	 	
 //W25Q80  ID  0XEF13
 //W25Q16  ID  0XEF14
@@ -77,9 +78,7 @@ void W25QXX_Erase_Block(uint32_t Dst_Addr); //块擦除
 void W25QXX_Wait_Busy(void);           	//等待空闲
 void W25QXX_PowerDown(void);        	//进入掉电模式
 void W25QXX_WAKEUP(void);				//唤醒
-void light(void);
-void myW25QXX_Write(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);
-void myW25QXX_Read(uint8_t* pBuffer,uint32_t ReadAddr,uint16_t NumByteToRead);
+void Delay_us(int us);
 void W25QXX_Write_Page(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);
 #ifdef __cplusplus
 }

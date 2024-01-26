@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "W25Q.h"
@@ -89,6 +90,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 	uint8_t a1[]={"LLT SPI TEST"};
 
@@ -102,26 +104,15 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		uint8_t a=W25QXX_Init();
 		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,GPIO_PIN_SET);
 		
+		
+		//Delay_us(50000);
+		HAL_Delay(50);
+		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_8,GPIO_PIN_SET);
+		//Delay_us(50000);
+		HAL_Delay(50);
 		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_8,GPIO_PIN_RESET);
-		HAL_Delay(1000);
-		
-		
-		W25QXX_Erase_Sector(OperAddr);
-		//W25QXX_Write_NoCheck(a1, OperAddr, SIZE);
-		W25QXX_Write_Page(a1, OperAddr, SIZE);
-		
-		W25QXX_Read(b,OperAddr ,SIZE);
-		
-		if(b[4]=='S')
-		{
-					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_8,GPIO_PIN_SET);
-					HAL_Delay(3000);
-			
-		}
-		
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
