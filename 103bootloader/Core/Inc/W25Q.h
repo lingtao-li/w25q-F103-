@@ -78,7 +78,7 @@ void W25QXX_Erase_Block(uint32_t Dst_Addr); //块擦除
 void W25QXX_Wait_Busy(void);           	//等待空闲
 void W25QXX_PowerDown(void);        	//进入掉电模式
 void W25QXX_WAKEUP(void);				//唤醒
-void Delay_us(int us);
+void Delay_us(uint16_t us);
 void W25QXX_Write_Page(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteToWrite);
 #ifdef __cplusplus
 }

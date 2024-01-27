@@ -1,8 +1,8 @@
 Dependencies for Project '103bootloader', Target '103bootloader': (DO NOT MODIFY !)
 F (startup_stm32f103xb.s)(0x65B3263F)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_103bootloader-I"D:\32 keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\32 keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o .\103bootloader\startup_stm32f103xb.o --depend .\103bootloader\startup_stm32f103xb.d)
-F (..\Core\Inc\W25Q.h)(0x65B320AA)()
-F (..\Core\Src\W25Q.c)(0x65B32824)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_103bootloader-I"D:\32 keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\32 keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\103bootloader\w25q.o --omf_browse .\103bootloader\w25q.crf --depend .\103bootloader\w25q.d)
-I (../Core/Inc/W25Q.h)(0x65B320AA)
+F (..\Core\Inc\W25Q.h)(0x65B4B2A8)()
+F (..\Core\Src\W25Q.c)(0x65B4B2A8)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_103bootloader-I"D:\32 keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\32 keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\103bootloader\w25q.o --omf_browse .\103bootloader\w25q.crf --depend .\103bootloader\w25q.d)
+I (../Core/Inc/W25Q.h)(0x65B4B2A8)
 I (../Core/Inc/main.h)(0x65B11793)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x65ADFA3B)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x65B31F4E)
@@ -67,7 +67,7 @@ I (../Core/Inc/spi.h)(0x65B11792)
 I (../Core/Inc/tim.h)(0x65B32243)
 I (../Core/Inc/usart.h)(0x65B11792)
 I (../Core/Inc/gpio.h)(0x65B11792)
-I (../Core/Inc/W25Q.h)(0x65B320AA)
+I (../Core/Inc/W25Q.h)(0x65B4B2A8)
 F (../Core/Src/gpio.c)(0x65B11791)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_103bootloader-I"D:\32 keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\32 keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\103bootloader\gpio.o --omf_browse .\103bootloader\gpio.crf --depend .\103bootloader\gpio.d)
 I (../Core/Inc/gpio.h)(0x65B11792)
 I (../Core/Inc/main.h)(0x65B11793)

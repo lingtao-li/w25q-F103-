@@ -197,7 +197,7 @@ void W25QXX_Write_NoCheck(uint8_t* pBuffer,uint32_t WriteAddr,uint16_t NumByteTo
 		}
 	}    
 } 
-void Delay_us(int us)
+void Delay_us(uint16_t us)
 {
 	uint16_t differ=0xffff-us-5;
 	__HAL_TIM_SetCounter(&htim2,differ);
