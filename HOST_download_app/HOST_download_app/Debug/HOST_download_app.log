@@ -1,4 +1,4 @@
 ﻿  MainForm.cpp
-D:\lunwen\Jiameng_STM32_online_update-main\Jiameng_STM32_online_update-main\Software\HOST_download_app\HOST_download_app\MainForm.cpp(8,33): warning C4829: 函数 main 的参数可能不正确。请考虑使用“int main(Platform::Array<Platform::String^>^ argv)”
+C:\Users\李凌涛\Documents\GitHub\w25q-F103-\HOST_download_app\HOST_download_app\MainForm.cpp(8,33): warning C4829: 函数 main 的参数可能不正确。请考虑使用“int main(Platform::Array<Platform::String^>^ argv)”
   MainForm.obj : 遇到了 MSIL 模块；对 MSIL 禁用了增量链接；正在执行完全链接
-  HOST_download_app.vcxproj -> D:\lunwen\Jiameng_STM32_online_update-main\Jiameng_STM32_online_update-main\Software\HOST_download_app\Debug\HOST_download_app.exe
+  HOST_download_app.vcxproj -> C:\Users\李凌涛\Documents\GitHub\w25q-F103-\HOST_download_app\Debug\HOST_download_app.exe

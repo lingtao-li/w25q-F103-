@@ -7,3 +7,6 @@ E:\Github\Jiameng_STM32_online_update\Software\HOST_download_app\HOST_download_a
 D:\lunwen\Jiameng_STM32_online_update-main\Jiameng_STM32_online_update-main\Software\HOST_download_app\HOST_download_app\Debug\HOST_download_app.vcxproj.AssemblyReference.cache
 D:\lunwen\Jiameng_STM32_online_update-main\Jiameng_STM32_online_update-main\Software\HOST_download_app\HOST_download_app\Debug\HOSTdownloadapp.MainForm.resources
 D:\lunwen\Jiameng_STM32_online_update-main\Jiameng_STM32_online_update-main\Software\HOST_download_app\HOST_download_app\Debug\HOST_download_app.vcxproj.GenerateResource.cache
+C:\Users\李凌涛\Documents\GitHub\w25q-F103-\HOST_download_app\HOST_download_app\Debug\HOST_download_app.vcxproj.AssemblyReference.cache
+C:\Users\李凌涛\Documents\GitHub\w25q-F103-\HOST_download_app\HOST_download_app\Debug\HOSTdownloadapp.MainForm.resources
+C:\Users\李凌涛\Documents\GitHub\w25q-F103-\HOST_download_app\HOST_download_app\Debug\HOST_download_app.vcxproj.GenerateResource.cache

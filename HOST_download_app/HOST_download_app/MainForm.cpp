@@ -33,6 +33,7 @@ void MainForm::WorkerThreadFunction() {
 	uint8_t* uart_buf = NULL;
 	MSG msg;
 	uint8_t process_stage = 1;
+	uint8_t crc_base = 0;
 	while ((isRunning) && (GetMessage(&msg, NULL, 0, 0))) {
 		if (msg.message == WM_SEND_BYTE) {
 			unsigned char byteValue = static_cast<unsigned char>(msg.lParam);
@@ -68,12 +69,17 @@ void MainForm::WorkerThreadFunction() {
 				if (uart_buf[buf_pointer] == ETX_OTA_SOF) {
 					process_stage = 2;
 					buf_pointer = 0;
+
+
+
+					this->textBox2->Text += "ok";
+
 					continue;
 				}
 			}
 
 
-		
+
 
 
 			else {
@@ -83,6 +89,15 @@ void MainForm::WorkerThreadFunction() {
 			//this->textBox2->Text += "test\r\n";
 			//Thread::Sleep(1);
 		reset:
+			// back stage 1
+			process_stage = 1;
+			// fifo pointer reset
+			buf_pointer = 0;
+			crc_base = 0;
+
+
+
+
 		}
 	}
 }
